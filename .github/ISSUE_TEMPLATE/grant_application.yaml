@@ -1,0 +1,432 @@
+name: ZCG Grant Application
+description: Submit a grant application to Zcash Community Grants
+title: Grant Application - {Application Name}
+labels: ["Pending Grant Application"]
+body:
+
+- type: markdown
+  attributes:
+    value: '## Terms and Conditions'
+
+- type: checkboxes
+  id: terms_and_conditions_checkboxes
+  attributes:
+    label: Terms and Conditions
+    description: Please review and accept all terms and conditions before proceeding
+    options:
+    - label: I agree to the [Grant Agreement](https://9ba4718c-5c73-47c3-a024-4fc4e5278803.usrfiles.com/ugd/9ba471_f81ef4e4b5f040038350270590eb2e42.pdf) terms if funded
+    - label: I agree to [Provide KYC information](https://9ba4718c-5c73-47c3-a024-4fc4e5278803.usrfiles.com/ugd/9ba471_7d9e73d16b584a61bae92282b208efc4.pdf) if funded above $50,000 USD
+    - label: I agree to disclose conflicts of interest
+    - label: I agree to adhere to the [Code of Conduct](https://forum.zcashcommunity.com/t/zcg-code-of-conduct/41787) and [Communication Guidelines](https://forum.zcashcommunity.com/t/zcg-communication-guidelines/44284)
+    - label: I agree to post request details on the [Community Forum](https://forum.zcashcommunity.com/c/grants/33)
+    - label: I understand it is my responsibility to post a link to this issue on the [Zcash Community Forums](https://forum.zcashcommunity.com/c/grants/33) after this application has been submitted so the community can give input. I understand this is required in order for ZCG to discuss and vote on this grant application.
+  validations:
+    required: true
+
+- type: input
+  id: assignees
+  attributes:
+    label: Application Owners (@Octocat, @Octocat1)
+    description: GitHub usernames of all individuals responsible for this application
+  validations:
+    required: true
+
+- type: markdown
+  attributes:
+    value: '## Organization Details'
+
+- type: input
+  id: organization_details_name
+  attributes:
+    label: Organization Name
+    description: Name of the organization or individual applying for the grant
+  validations:
+    required: true
+
+- type: input
+  id: organization_details_discovery
+  attributes:
+    label: How did you learn about Zcash Community Grants
+    description: Help us understand how applicants discover our grant program
+  validations:
+    required: true
+
+- type: markdown
+  attributes:
+    value: '## Project Overview'
+
+- type: input
+  id: project_overview_amount
+  attributes:
+    label: Requested Grant Amount (USD)
+    description: Total funding amount requested in US Dollars
+    placeholder: ex. $50,000
+  validations:
+    required: true
+
+- type: dropdown
+  id: project_overview_category
+  attributes:
+    label: Category
+    description: '[See Category Definitions](https://zcashcommunitygrants.org/categories)'
+    options:
+    - Infrastructure
+    - Community
+    - Education
+    - Non-Wallet Applications
+    - Integration
+    - Wallets
+    - Research & Development
+    - Media
+    - Zcash Protocol Extension
+    - Dedicated Resource
+    - Event Sponsorships
+  validations:
+    required: true
+
+- type: markdown
+  attributes:
+    value: '## Team Information'
+
+- type: textarea
+  id: team_information_project_lead
+  attributes:
+    label: Project Lead
+    description: Provide details about the primary person responsible for the project
+    value: |
+      Name:
+      Role:
+      Background:
+      Responsibilities:
+    render: project-lead.yaml
+  validations:
+    required: true
+
+- type: textarea
+  id: team_information_members
+  attributes:
+    label: Additional Team Members
+    description: List all other team members and their roles in the project. Please delete the additional pre-filled text after you have listed all your team members. E.g. if you only have 2 additional members you can delete the prefilled text for 3-6. If you are the only individual for the project please write “None or N/A.
+    value: |
+      - Name:
+         Role:
+         Background:
+         Responsibilities:
+      - Name:
+         Role:
+         Background:
+         Responsibilities:
+      - Name:
+         Role:
+         Background:
+         Responsibilities:
+      - Name:
+         Role:
+         Background:
+         Responsibilities:
+      - Name:
+         Role:
+         Background:
+         Responsibilities:
+      - Name:
+         Role:
+         Background:
+         Responsibilities:
+    render: team-members.yaml
+  validations:
+    required: true
+
+- type: markdown
+  attributes:
+    value: '## Project Details'
+
+- type: textarea
+  id: project_details_summary
+  attributes:
+    label: Project Summary
+    description: Provide a brief summary/elevator pitch of your project in 1-2 sentences
+  validations:
+    required: true
+
+- type: textarea
+  id: project_details_description
+  attributes:
+    label: Project Description
+    description: Provide a comprehensive overview of the project and its goals
+  validations:
+    required: true
+
+- type: textarea
+  id: project_details_problem
+  attributes:
+    label: Proposed Problem
+    description: Clearly identify the problem or challenge your project aims to address
+  validations:
+    required: true
+
+- type: textarea
+  id: project_details_solution
+  attributes:
+    label: Proposed Solution
+    description: Explain how your project will solve the identified problem
+  validations:
+    required: true
+
+- type: textarea
+  id: project_details_format
+  attributes:
+    label: Solution Format
+    description: Describe the format and deliverables of your solution (e.g., software, research paper, event)
+  validations:
+    required: true
+
+- type: textarea
+  id: project_details_dependencies
+  attributes:
+    label: Dependencies
+    description: List any dependencies required for your project including technical, resource, and collaborations with other individuals, teams, or organizations.
+  validations:
+    required: true
+
+- type: textarea
+  id: project_details_technical
+  attributes:
+    label: Technical Approach
+    description: Outline the technical methodology and tools you plan to use
+  validations:
+    required: true
+
+- type: textarea
+  id: project_details_merge
+  attributes:
+    label: Upstream Merge Opportunities
+    description: |
+      If your project involves forking or modifying existing Zcash software, please describe:
+      - Which upstream Zcash repositories you plan to fork/modify
+      - What changes you plan to make
+      - Whether these changes could benefit the wider Zcash ecosystem if merged upstream
+      - Any coordination needed with upstream maintainers
+      - Timeline considerations for potential upstream merges
+  validations:
+    required: true
+
+- type: markdown
+  attributes:
+    value: '## Budget'
+
+- type: input
+  id: budget_hardware
+  attributes:
+    label: Hardware/Software Costs (USD)
+    description: Total cost for all hardware and software needed
+    placeholder: ex. $5,000
+  validations:
+    required: true
+
+- type: textarea
+  id: budget_hardware_justification
+  attributes:
+    label: Hardware/Software Justification
+    description: Explain why these hardware/software costs are necessary for the project
+  validations:
+    required: true
+
+- type: input
+  id: budget_service
+  attributes:
+    label: Service Costs (USD)
+    description: Total cost for any external services required
+    placeholder: ex. $10,000
+  validations:
+    required: true
+
+- type: textarea
+  id: budget_service_justification
+  attributes:
+    label: Service Costs Justification
+    description: Explain why these service costs are necessary for the project
+  validations:
+    required: true
+
+- type: input
+  id: budget_compensation
+  attributes:
+    label: Compensation Costs (USD)
+    description: Total cost for team member compensation
+    placeholder: ex. $35,000
+  validations:
+    required: true
+
+- type: textarea
+  id: budget_compensation_justification
+  attributes:
+    label: Compensation Costs Justification
+    description: Provide details about team member compensation and rates
+  validations:
+    required: true
+
+- type: input
+  id: budget_total
+  attributes:
+    label: Total Budget (USD)
+    description: Sum of all costs (should match requested grant amount)
+    placeholder: ex. $50,000
+  validations:
+    required: true
+
+- type: dropdown
+  id: budget_previous_funding
+  attributes:
+    label: Previous Funding
+    description: Indicate if you have received any previous funding from Zcash Community Grants
+    options:
+    - 'Yes'
+    - 'No'
+  validations:
+    required: true
+
+- type: textarea
+  id: budget_previous_details
+  attributes:
+    label: Previous Funding Details
+    description: If you received previous funding, provide details about past grants and their outcomes
+  validations:
+    required: false
+
+- type: dropdown
+  id: budget_other_sources
+  attributes:
+    label: Other Funding Sources
+    description: Indicate if you have or plan to receive funding from other sources
+    options:
+    - 'No'
+    - 'Yes'
+  validations:
+    required: true
+
+- type: textarea
+  id: budget_other_sources_details
+  attributes:
+    label: Other Funding Sources Details
+    description: If you have of plan to recieve funding from other sources, provide details
+  validations:
+    required: false
+
+- type: markdown
+  attributes:
+    value: '## Risk Assessment'
+
+- type: textarea
+  id: risk_implementation
+  attributes:
+    label: Implementation Risks
+    description: Identify and describe potential challenges or obstacles to successful implementation
+  validations:
+    required: true
+
+- type: textarea
+  id: risk_side_effects
+  attributes:
+    label: Potential Side Effects
+    description: Describe any potential unintended consequences or negative impacts
+  validations:
+    required: true
+
+- type: textarea
+  id: risk_metrics
+  attributes:
+    label: Success Metrics
+    description: Define how you will measure and evaluate the success of your project
+  validations:
+    required: true
+
+- type: markdown
+  attributes:
+    value: '## Project Schedule'
+
+- type: input
+  id: schedule_startup
+  attributes:
+    label: Startup Funding (USD)
+    description: Amount needed to begin the project
+    placeholder: ex. $10,000
+  validations:
+    required: true
+
+- type: textarea
+  id: schedule_startup_justification
+  attributes:
+    label: Startup Funding Justification
+    description: Explain why startup funding is needed and how it will be used
+  validations:
+    required: true
+
+- type: textarea
+  id: schedule_milestones
+  attributes:
+    label: Milestone Details
+    description: Break down the project into specific milestones with associated deliverables and timelines. Please complete the details for all milestones of your grant and leave the text after your last milestone. E.g. if you only have 3 milestones in your grant, complete the details for 3 milestones and then delete the prefilled text for milestones 4-12.
+    value: |
+      - Milestone: 1
+        Amount (USD): 0
+        Expected Completion Date: YYYY-MM-DD
+        Deliverables: Provide a brief summary
+      - Milestone: 2
+        Amount (USD): 0
+        Expected Completion Date: YYYY-MM-DD
+        Deliverables: Provide a brief summary
+      - Milestone: 3
+        Amount (USD): 0
+        Expected Completion Date: YYYY-MM-DD
+        Deliverables: Provide a brief summary
+      - Milestone: 4
+        Amount (USD): 0
+        Expected Completion Date: YYYY-MM-DD
+        Deliverables: Provide a brief summary
+      - Milestone: 5
+        Amount (USD): 0
+        Expected Completion Date: YYYY-MM-DD
+        Deliverables: Provide a brief summary
+      - Milestone: 6
+        Amount (USD): 0
+        Expected Completion Date: YYYY-MM-DD
+        Deliverables: Provide a brief summary
+      - Milestone: 7
+        Amount (USD): 0
+        Expected Completion Date: YYYY-MM-DD
+        Deliverables: Provide a brief summary
+      - Milestone: 8
+        Amount (USD): 0
+        Expected Completion Date: YYYY-MM-DD
+        Deliverables: Provide a brief summary
+      - Milestone: 9
+        Amount (USD): 0
+        Expected Completion Date: YYYY-MM-DD
+        Deliverables: Provide a brief summary
+      - Milestone: 10
+        Amount (USD): 0
+        Expected Completion Date: YYYY-MM-DD
+        Deliverables: Provide a brief summary
+      - Milestone: 11
+        Amount (USD): 0
+        Expected Completion Date: YYYY-MM-DD
+        Deliverables: Provide a brief summary
+      - Milestone: 12
+        Amount (USD): 0
+        Expected Completion Date: YYYY-MM-DD
+        Deliverables: Provide a brief summary
+    render: milestones.yaml
+  validations:
+    required: true
+
+- type: textarea
+  id: supporting_documents
+  attributes:
+    label: Supporting Documents
+    description: To add a document, click in the text box then select “Paste, drop, or Click to add files. You can also add a link to a file (please give anyone with the link viewing access).
+    value: |
+      - File Name 1: Brief description of the file contents
+      - File Name 2: Brief description of the file contents
+    render: files.yaml
+  validations:
+    required: false
