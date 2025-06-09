@@ -370,51 +370,123 @@ body:
       - Milestone: 1
         Amount (USD): 0
         Expected Completion Date: YYYY-MM-DD
-        Deliverables: Provide a brief summary
+        User Stories:
+          - "As a [type of user], I want [some goal], so that [some reason]"
+          - "As a [different type of user], I want [some goal], so that [some reason]" (optional - add more as needed)
+        Deliverables: 
+          - [List specific deliverables that fulfill the user stories] 
+          - [Each deliverable should clearly address one or more user stories]
+        Acceptance Criteria: [How will the target users validate this milestone is complete?]
       - Milestone: 2
         Amount (USD): 0
         Expected Completion Date: YYYY-MM-DD
-        Deliverables: Provide a brief summary
+        User Stories:           
+          - "As a [type of user], I want [some goal], so that [some reason]"
+          - "As a [different type of user], I want [some goal], so that [some reason]" (optional - add more as needed)
+        Deliverables:
+          - [List specific deliverables that fulfill the user stories]
+          - [Each deliverable should clearly address one or more user stories]
+        Acceptance Criteria: [How will the target users validate this milestone is complete?]
       - Milestone: 3
         Amount (USD): 0
         Expected Completion Date: YYYY-MM-DD
-        Deliverables: Provide a brief summary
+        User Stories:
+          - "As a [type of user], I want [some goal], so that [some reason]"
+          - "As a [different type of user], I want [some goal], so that [some reason]" (optional - add more as needed)
+        Deliverables:
+          - [List specific deliverables that fulfill the user stories]
+          - [Each deliverable should clearly address one or more user stories]
+        Acceptance Criteria: [How will the target users validate this milestone is complete?]
       - Milestone: 4
         Amount (USD): 0
         Expected Completion Date: YYYY-MM-DD
-        Deliverables: Provide a brief summary
+        User Stories:
+          - "As a [type of user], I want [some goal], so that [some reason]"
+          - "As a [different type of user], I want [some goal], so that [some reason]" (optional - add more as needed)
+        Deliverables:
+          - [List specific deliverables that fulfill the user stories]
+          - [Each deliverable should clearly address one or more user stories]
+        Acceptance Criteria: [How will the target users validate this milestone is complete?]
       - Milestone: 5
         Amount (USD): 0
         Expected Completion Date: YYYY-MM-DD
-        Deliverables: Provide a brief summary
+        User Stories:
+          - "As a [type of user], I want [some goal], so that [some reason]"
+          - "As a [different type of user], I want [some goal], so that [some reason]" (optional - add more as needed)
+        Deliverables:
+          - [List specific deliverables that fulfill the user stories]
+          - [Each deliverable should clearly address one or more user stories]
+        Acceptance Criteria: [How will the target users validate this milestone is complete?]
       - Milestone: 6
         Amount (USD): 0
         Expected Completion Date: YYYY-MM-DD
-        Deliverables: Provide a brief summary
+        User Stories:
+          - "As a [type of user], I want [some goal], so that [some reason]"
+          - "As a [different type of user], I want [some goal], so that [some reason]" (optional - add more as needed)
+        Deliverables:
+          - [List specific deliverables that fulfill the user stories]
+          - [Each deliverable should clearly address one or more user stories]
+        Acceptance Criteria: [How will the target users validate this milestone is complete?]
       - Milestone: 7
         Amount (USD): 0
         Expected Completion Date: YYYY-MM-DD
-        Deliverables: Provide a brief summary
+        User Stories:
+          - "As a [type of user], I want [some goal], so that [some reason]"
+          - "As a [different type of user], I want [some goal], so that [some reason]" (optional - add more as needed)
+        Deliverables:
+          - [List specific deliverables that fulfill the user stories]
+          - [Each deliverable should clearly address one or more user stories]
+        Acceptance Criteria: [How will the target users validate this milestone is complete?]
       - Milestone: 8
         Amount (USD): 0
         Expected Completion Date: YYYY-MM-DD
-        Deliverables: Provide a brief summary
+        User Stories:
+          - "As a [type of user], I want [some goal], so that [some reason]"
+          - "As a [different type of user], I want [some goal], so that [some reason]" (optional - add more as needed)
+        Deliverables:
+          - [List specific deliverables that fulfill the user stories]
+          - [Each deliverable should clearly address one or more user stories]
+        Acceptance Criteria: [How will the target users validate this milestone is complete?]
       - Milestone: 9
         Amount (USD): 0
         Expected Completion Date: YYYY-MM-DD
-        Deliverables: Provide a brief summary
+        User Stories:
+          - "As a [type of user], I want [some goal], so that [some reason]"
+          - "As a [different type of user], I want [some goal], so that [some reason]" (optional - add more as needed)
+        Deliverables:
+          - [List specific deliverables that fulfill the user stories]
+          - [Each deliverable should clearly address one or more user stories]
+        Acceptance Criteria: [How will the target users validate this milestone is complete?]
       - Milestone: 10
         Amount (USD): 0
         Expected Completion Date: YYYY-MM-DD
-        Deliverables: Provide a brief summary
+        User Stories:
+          - "As a [type of user], I want [some goal], so that [some reason]"
+          - "As a [different type of user], I want [some goal], so that [some reason]" (optional - add more as needed)
+        Deliverables:
+          - [List specific deliverables that fulfill the user stories]
+          - [Each deliverable should clearly address one or more user stories]
+        Acceptance Criteria: [How will the target users validate this milestone is complete?]
       - Milestone: 11
         Amount (USD): 0
         Expected Completion Date: YYYY-MM-DD
-        Deliverables: Provide a brief summary
+        User Stories:
+          - "As a [type of user], I want [some goal], so that [some reason]"
+          - "As a [different type of user], I want [some goal], so that [some reason]" (optional - add more as needed)
+        Deliverables:
+          - [List specific deliverables that fulfill the user stories]
+          - [Each deliverable should clearly address one or more user stories]
+        Acceptance Criteria: [How will the target users validate this milestone is complete?]
       - Milestone: 12
         Amount (USD): 0
         Expected Completion Date: YYYY-MM-DD
-        Deliverables: Provide a brief summary
+        User Stories:
+          - "As a [type of user], I want [some goal], so that [some reason]"
+          - "As a [different type of user], I want [some goal], so that [some reason]" (optional - add more as needed)
+        Deliverables:
+          - [List specific deliverables that fulfill the user stories]
+          - [Each deliverable should clearly address one or more user stories]
+        Acceptance Criteria: [How will the target users validate this milestone is complete?]
     render: milestones.yaml
   validations:
     required: true
