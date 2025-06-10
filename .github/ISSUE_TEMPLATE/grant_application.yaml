@@ -18,6 +18,7 @@ body:
     - label: I agree to [Provide KYC information](https://9ba4718c-5c73-47c3-a024-4fc4e5278803.usrfiles.com/ugd/9ba471_7d9e73d16b584a61bae92282b208efc4.pdf) if funded above $50,000 USD
     - label: I agree to disclose conflicts of interest
     - label: I agree to adhere to the [Code of Conduct](https://forum.zcashcommunity.com/t/zcg-code-of-conduct/41787) and [Communication Guidelines](https://forum.zcashcommunity.com/t/zcg-communication-guidelines/44284)
+    - label: I understand all milestone deliverables will be validated and accepted by their intended users or their representatives, who will confirm that the deliverables meet the required quality, functionality, and usability for each user story.
     - label: I agree to post request details on the [Community Forum](https://forum.zcashcommunity.com/c/grants/33)
     - label: I understand it is my responsibility to post a link to this issue on the [Zcash Community Forums](https://forum.zcashcommunity.com/c/grants/33) after this application has been submitted so the community can give input. I understand this is required in order for ZCG to discuss and vote on this grant application.
   validations:
