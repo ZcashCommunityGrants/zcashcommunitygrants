@@ -1,0 +1,18 @@
+{
+  "headline": "GitHub[ZcashCommunityGrants/zcashcommunitygrants]: Grant Application - {Blockwee}",
+  "url": "https://github.com/ZcashCommunityGrants/zcashcommunitygrants/issues/230",
+  "expected_usd": 25000.0,
+  "strategy": "锁定明码 bounty；交付代码+run_log+sample_data，并准备自动交割链接。",
+  "raw_expected": "25000.00 USD",
+  "bounty_literal": "$25000",
+  "source_line": "## 🚨 发现新商机：GitHub[ZcashCommunityGrants/zcashcommunitygrants]: Grant Application - {Blockwee}",
+  "kind": "generic_automation",
+  "difficulty": 1.0,
+  "score": 25000.0,
+  "oid": "494aafb5a29899b0c29d71bc33c4fb8fd7d96c0a299997672db9f2759d27213b",
+  "payout": {
+    "asset": "USDT",
+    "chain": "EVM",
+    "wallet": "0xF57503F99fA20b912200ed90D26d945093136ef5"
+  }
+}
