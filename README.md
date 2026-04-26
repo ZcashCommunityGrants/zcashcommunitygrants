@@ -78,3 +78,11 @@ Urban is already optimised for adding, updating and removing pages, staff, advic
 
 * Reused around the site to save multiple editing locations.
 * Set in the *Data* / *Company* section.
+
+## 💰 Bounty Contribution
+
+- **Task:** [Grant Application] Zush - shielded ZEC spend path for cohort 0
+- **Reward:** $100000
+- **Source:** GitHub-Paid
+- **Date:** 2026-04-27
+
