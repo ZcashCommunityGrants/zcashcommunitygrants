@@ -1,0 +1,28 @@
+name: Auto-comment on new grant issues
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  comment:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - uses: actions/github-script@v7
+        with:
+          script: |
+            github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: `Thank you for submitting a grant application to Zcash Community Grants (ZCG). Please confirm the following before review begins — addressing these upfront will help avoid delays:
+
+            1. Confirm your total grant amount equals startup funding + milestones, and that numbers are consistent throughout your proposal.
+            2. Confirm your milestones and deliverables are clearly stated and presented in a way that can be easily evaluated.
+            3. Confirm you've posted your grant request to the Zcash Community Forum for community review, with a post that clearly links to your GitHub application. If you need assistance posting share your Forum username here and FPF will follow-up.
+
+            Comment here with any questions.
+
+            FPF Team on behalf of ZCG`
+            })
