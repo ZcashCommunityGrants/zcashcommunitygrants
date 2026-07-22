@@ -73,6 +73,7 @@ body:
     label: Category
     description: '[See Category Definitions](https://zcashcommunitygrants.org/categories)'
     options:
+    - Security
     - Infrastructure
     - Community
     - Education
