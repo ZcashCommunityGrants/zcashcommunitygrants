@@ -214,6 +214,20 @@ body:
   validations:
     required: true
 
+- type: dropdown
+  id: project_details_license
+  attributes:
+    label: Open Source License
+    description: The [Grant Agreement](https://9ba4718c-5c73-47c3-a024-4fc4e5278803.usrfiles.com/ugd/9ba471_f81ef4e4b5f040038350270590eb2e42.pdf) requires work to be released under the MIT license. If you need a different license, explain why in Technical Approach.
+    options:
+    - MIT
+    - Apache 2.0
+    - BSD+Patent
+    - Other
+    - Not applicable (no code or other licensable work)
+  validations:
+    required: true
+
 - type: markdown
   attributes:
     value: '## Budget'
