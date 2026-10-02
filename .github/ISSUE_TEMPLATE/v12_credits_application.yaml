@@ -56,6 +56,15 @@ body:
   validations:
     required: true
 
+- type: input
+  id: license
+  attributes:
+    label: Open Source License
+    description: The license your repositories are released under. If they use different licenses, list each one.
+    placeholder: ex. MIT, Apache 2.0
+  validations:
+    required: true
+
 - type: textarea
   id: project_description
   attributes:
