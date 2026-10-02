@@ -1,0 +1,11 @@
+[package]
+name = "x402-shielded"
+version = "0.1.0"
+authors = ["baby-zack-agent <cmuczu2mf000ecvwz070e3iek>"]
+edition = "2021"
+license = "MIT"
+
+[dependencies]
+librustzcash = { version = "0.11", features = ["std"] }
+serde = { version = "1.0", features = ["derive"] }
+thiserror = "1.0"
