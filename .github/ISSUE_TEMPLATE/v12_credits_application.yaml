@@ -84,15 +84,3 @@ body:
     placeholder: ex. 10 PRs per week
   validations:
     required: false
-
-- type: markdown
-  attributes:
-    value: '## Access'
-
-- type: textarea
-  id: access_emails
-  attributes:
-    label: Email Addresses for V12 Access
-    description: Email addresses of the people who should get access to V12. This issue is public, so if you'd rather not post them here, leave this blank and send them to the committee privately.
-  validations:
-    required: false
