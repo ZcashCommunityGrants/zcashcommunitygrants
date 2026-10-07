@@ -22,11 +22,13 @@ body:
     description: Please review and accept the following before submitting
     options:
     - label: I understand that a ZCG committee member will be added to our V12 organization to help manage funding and ongoing costs
+      required: true
     - label: I understand that my team is responsible for triaging and fixing what V12 reports
+      required: true
     - label: I agree to follow responsible disclosure for any security issue that affects users or other projects
+      required: true
     - label: I agree to adhere to the [Code of Conduct](https://forum.zcashcommunity.com/t/zcg-code-of-conduct/41787) and [Communication Guidelines](https://forum.zcashcommunity.com/t/zcg-communication-guidelines/44284)
-  validations:
-    required: true
+      required: true
 
 - type: input
   id: applicants
