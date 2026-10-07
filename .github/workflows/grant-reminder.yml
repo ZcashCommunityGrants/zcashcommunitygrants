@@ -5,6 +5,7 @@ on:
 
 jobs:
   comment:
+    if: ${{ !contains(github.event.issue.labels.*.name, '🛡️ V12 Credits Application') }}
     runs-on: ubuntu-latest
     permissions:
       issues: write

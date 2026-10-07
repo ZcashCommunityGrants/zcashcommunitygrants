@@ -1,0 +1,98 @@
+name: V12 Credits Application
+description: Apply for ZCG-funded credits on V12, the AI security auditing platform by Zellic
+title: V12 Credits Application - {Project Name}
+labels: ["🛡️ V12 Credits Application"]
+assignees: ["NerdGGuy"]
+body:
+
+- type: markdown
+  attributes:
+    value: |
+      Zcash Community Grants (ZCG) funds credits on [V12](https://v12.sh), Zellic's AI security auditing platform, for teams building open-source software for the Zcash ecosystem. You don't need to be a current ZCG grantee.
+
+      The program starts with **ongoing pull request scans**. Once your team is in the program, you can ask ZCG for a one-off full repository scan, which we'll consider case by case.
+
+- type: markdown
+  attributes:
+    value: '## Terms'
+
+- type: checkboxes
+  id: terms_checkboxes
+  attributes:
+    label: Terms
+    description: Please review and accept the following before submitting
+    options:
+    - label: I understand that a ZCG committee member will be added to our V12 organization to help manage funding and ongoing costs
+      required: true
+    - label: I understand that my team is responsible for triaging and fixing what V12 reports
+      required: true
+    - label: I agree to follow responsible disclosure for any security issue that affects users or other projects
+      required: true
+    - label: I agree to adhere to the [Code of Conduct](https://forum.zcashcommunity.com/t/zcg-code-of-conduct/41787) and [Communication Guidelines](https://forum.zcashcommunity.com/t/zcg-communication-guidelines/44284)
+      required: true
+
+- type: input
+  id: applicants
+  attributes:
+    label: Applicants (@Octocat, @Octocat1)
+    description: GitHub usernames of the people responsible for this application
+  validations:
+    required: true
+
+- type: markdown
+  attributes:
+    value: '## Project Details'
+
+- type: input
+  id: project_name
+  attributes:
+    label: Project Name
+  validations:
+    required: true
+
+- type: textarea
+  id: repositories
+  attributes:
+    label: Repositories
+    description: Link(s) to the repositories you'd like to scan, one per line
+    placeholder: https://github.com/org/repo
+  validations:
+    required: true
+
+- type: input
+  id: license
+  attributes:
+    label: Open Source License
+    description: The license your repositories are released under. If they use different licenses, list each one.
+    placeholder: ex. MIT, Apache 2.0
+  validations:
+    required: true
+
+- type: textarea
+  id: project_description
+  attributes:
+    label: Project Description
+    description: A short description of the project and its role in the Zcash ecosystem
+  validations:
+    required: true
+
+- type: input
+  id: pr_volume
+  attributes:
+    label: Expected PR Volume
+    description: Roughly how many pull requests you expect to scan, if you know
+    placeholder: ex. 10 PRs per week
+  validations:
+    required: false
+
+- type: markdown
+  attributes:
+    value: '## Access'
+
+- type: textarea
+  id: access_emails
+  attributes:
+    label: Email Addresses for V12 Access
+    description: Email addresses of the people who should get access to V12. This issue is public, so if you'd rather not post them here, leave this blank and send them to the committee privately.
+  validations:
+    required: false
